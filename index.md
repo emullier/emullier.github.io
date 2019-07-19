@@ -7,9 +7,6 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ### Markdown
 
 
-```markdown
-Syntax highlighted code block
-
 # Education
 since 2016  
 Ph.D. candidate in Neurosciences - Lausanne University Hospital, Switzerland  
