@@ -1,3 +1,4 @@
-layout: page
-title: "Index"
-permalink: /index
+---
+layout: post
+title: Blogging Like a Hacker
+---
