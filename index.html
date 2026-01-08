@@ -56,16 +56,16 @@ https://templatemo.com/tm-531-reflux
             <div class="social-network">
               <ul class="soial-icons">
                 <li>
-                  <a href="#https://www.linkedin.com/in/emelinemullier/"><i class="fa fa-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/emelinemullier/"><i class="fa fa-linkedin"></i></a>
                 </li>
                 <li>
-                  <a href="#https://twitter.com/EmelineMullier"><i class="fa fa-twitter"></i></a>
+                  <a href="https://twitter.com/EmelineMullier"><i class="fa fa-twitter"></i></a>
                 </li>
                 <li>
-                  <a href="#https://github.com/emullier"><i class="fa fa-github"></i></a>
+                  <a href="https://github.com/emullier"><i class="fa fa-github"></i></a>
                 </li>
                 <li>
-                  <a href="#https://scholar.google.ch/citations?user=8t21Wc8AAAAJ&hl=en"><i class="fa fa-google"></i></a>
+                  <a href="https://scholar.google.ch/citations?user=8t21Wc8AAAAJ&hl=en"><i class="fa fa-google"></i></a>
                 </li>
               <!-- <li>
                   <a href="#https://www.researchgate.net/profile/Emeline-Mullier"><i class="fab fa-researchgate"></i></a>
@@ -85,10 +85,8 @@ https://templatemo.com/tm-531-reflux
             <h2>About Me</h2>
             <div class="line-dec"></div>
             <span
-              > Senior research and data scientist and senior research scientist with 8+ years of experience applying machine learning to neuroimaging applications. 
-              Skilled in using machine learning to analyze neuroimaging data (MRI, EEG, fNIRS) and gain insights into the brain structure and function. 
-              Experienced in developing and marketing novel state-of-art neuroimaging products. 
-              Passionate about using data to advance our understanding of brain and body mechanisms.</span
+              > ML Engineer specializing in biomedical data, neuroimaging, signal processing and reproducible ML pipelines. 9+ years
+                multimodal ML systems in clinical and research environments, building HPC workflows, and dockerized pipelines.</span
             >
           </div>
           
@@ -158,43 +156,45 @@ https://templatemo.com/tm-531-reflux
             <div class="col-md-6">
               <div class="service-item">
                 <div class="fourth-service-icon service-icon"></div>
-                <h4>Data Science</h4>
+                <h4>Programming &amp; Scripting</h4>
                 <p>
-                  Statistics   <br/>
-                  Machine Learning/AI   <br/>
-                  Data Analytics  <br/>
-                  Graph Theory  
+                  Python <br/>
+                  Bash <br/>
+                  MATLAB
                 </p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="service-item">
                 <div class="second-service-icon service-icon"></div>
-                <h4>Coding &amp; Informatics </h4>
-                <p> Python <br/>
-                R <br/>
-                Matlab  <br/>
-                HTML &amp; CSS , Wordpress </p>
+                <h4>ML &amp; Data Analysis</h4>
+                <p>
+                  SVM <br/>
+                  Unsupervised learning (clustering, embeddings) <br/>
+                  Dimensionality reduction
+                </p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="service-item">
                 <div class="third-service-icon service-icon"></div>
-                <h4>Engineering</h4>
+                <h4>DevOps &amp; Reproducibility</h4>
                 <p>
-                  Signal &amp; Image Processing <br/>
-                  Computational neurosciences  <br/> 
-                  Neuroimaging  
+                  Docker <br/>
+                  Git <br/>
+                  CI/CD <br/>
+                  MLOps (Nipype workflow)
                 </p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="service-item">
                 <div class="first-service-icon service-icon"></div>
-                <h4>Environments </h4>
+                <h4>Neuroimaging Expertise</h4>
                 <p>
-                  Clinical   <br/> 
-                  Start-up
+                  MRI, EEG, fNIRS <br/>
+                  FreeSurfer processing <br/>
+                  BIDS
                 </p>
               </div>
             </div>
@@ -211,27 +211,200 @@ https://templatemo.com/tm-531-reflux
           </div>
           <div class="row">
             <div class="isotope-wrapper">
-              <form class="isotope-toolbar">
-                <label
-                  ><input
-                    type="radio"
-                    data-type="*"
-                    checked=""
-                    name="isotope-filter"
-                  />
-                  <span>all</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="ASD"
-                    name="isotope-filter"
-                  />
-                  <span>ASD</span></label
-                >
-              </form>
+              <div class="filter-tabs-wrapper">
+                <div class="filter-tabs">
+                  <button type="button" class="filter-tab-btn active" data-tab="all">ALL</button>
+                  <button type="button" class="filter-tab-btn" data-tab="technical">TECHNICAL</button>
+                  <button type="button" class="filter-tab-btn" data-tab="modalities">MODALITIES</button>
+                  <button type="button" class="filter-tab-btn" data-tab="clinical">CLINICAL</button>
+                  <button type="button" class="filter-tab-btn" data-tab="year">YEAR</button>
+                </div>
+
+                <form class="isotope-toolbar">
+                  <!-- ALL Tab -->
+                  <div class="filter-tab-content active" data-tab-content="all">
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="*"
+                        checked=""
+                        name="isotope-filter"
+                      />
+                      <span>Show All Projects</span></label
+                    >
+                  </div>
+
+                  <!-- Clinical Tab -->
+                  <div class="filter-tab-content" data-tab-content="clinical">
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="ASD"
+                        name="isotope-filter"
+                      />
+                      <span>ASD</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="PSYCHOSIS"
+                        name="isotope-filter"
+                      />
+                      <span>PSYCHOSIS</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="EPILEPSY"
+                        name="isotope-filter"
+                      />
+                      <span>EPILEPSY</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="CHILDREN"
+                        name="isotope-filter"
+                      />
+                      <span>CHILDREN</span></label
+                    >
+                  </div>
+
+                  <!-- Technical Tab -->
+                  <div class="filter-tab-content" data-tab-content="technical">
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="METHODS"
+                        name="isotope-filter"
+                      />
+                      <span>METHODS</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="SOFTWARE"
+                        name="isotope-filter"
+                      />
+                      <span>SOFTWARE</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="DATASET"
+                        name="isotope-filter"
+                      />
+                      <span>DATASET</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="WEBSITE"
+                        name="isotope-filter"
+                      />
+                      <span>WEBSITE</span></label
+                    >
+                  </div>
+
+                  <!-- Modalities Tab -->
+                  <div class="filter-tab-content" data-tab-content="modalities">
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="MRI"
+                        name="isotope-filter"
+                      />
+                      <span>MRI</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="NIRS"
+                        name="isotope-filter"
+                      />
+                      <span>NIRS</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="EEG"
+                        name="isotope-filter"
+                      />
+                      <span>EEG</span></label
+                    >
+                  </div>
+
+                  <!-- Year Tab -->
+                  <div class="filter-tab-content" data-tab-content="year">
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="2018"
+                        name="isotope-filter"
+                      />
+                      <span>2018</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="2019"
+                        name="isotope-filter"
+                      />
+                      <span>2019</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="2020"
+                        name="isotope-filter"
+                      />
+                      <span>2020</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="2021"
+                        name="isotope-filter"
+                      />
+                      <span>2021</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="2022"
+                        name="isotope-filter"
+                      />
+                      <span>2022</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="2023"
+                        name="isotope-filter"
+                      />
+                      <span>2023</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="2024"
+                        name="isotope-filter"
+                      />
+                      <span>2024</span></label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        data-type="2025"
+                        name="isotope-filter"
+                      />
+                      <span>2025</span></label
+                    >
+                  </div>
+                </form>
+              </div>
               <div class="isotope-box">
-                <div class="isotope-item" data-type="ASD">
+                <div class="isotope-item" data-type="ASD MRI 2021">
                   <figure class="snip1321">
                     <img
                       src="assets/images/children_ASD.jpg"
@@ -239,9 +412,9 @@ https://templatemo.com/tm-531-reflux
                     />
                     <figcaption>
                       <a
-                        href="assets/images/children_ASD_details.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
+                        href="#"
+                        class="details-trigger"
+                        data-target="modal-asd"
                         ><i class="fa fa-search"></i
                       ></a>
                       <h4>Biomarkers in children with autism</h4>
@@ -250,7 +423,7 @@ https://templatemo.com/tm-531-reflux
                   </figure>
                 </div>
 
-                <div class="isotope-item" data-type="">
+                <div class="isotope-item" data-type="METHODS MRI 2019">
                   <figure class="snip1321">
                     <img
                       src="assets/images/Brain_dynamics.jpg"
@@ -258,9 +431,9 @@ https://templatemo.com/tm-531-reflux
                     />
                     <figcaption>
                       <a
-                        href="assets/images/Brain_dynamics_details.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
+                        href="#"
+                        class="details-trigger"
+                        data-target="modal-brain-dynamics"
                         ><i class="fa fa-search"></i
                       ></a>
                       <h4>Brain dynamics and simplices </h4>
@@ -270,7 +443,7 @@ https://templatemo.com/tm-531-reflux
                   </figure>
                 </div>
 
-                <div class="isotope-item" data-type="">
+                <div class="isotope-item" data-type="ASD MRI 2021">
                   <figure class="snip1321">
                     <img
                       src="assets/images/SD_ABIDE.jpg"
@@ -278,9 +451,9 @@ https://templatemo.com/tm-531-reflux
                     />
                     <figcaption>
                       <a
-                        href="assets/images/SD_ABIDE_details.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
+                        href="#"
+                        class="details-trigger"
+                        data-target="modal-sd-abide"
                         ><i class="fa fa-search"></i
                       ></a>
                       <h4>Spatio-temporal dynamics in autism </h4>
@@ -290,7 +463,7 @@ https://templatemo.com/tm-531-reflux
                   </figure>
                 </div>
 
-                <div class="isotope-item" data-type="">
+                <div class="isotope-item" data-type="METHODS 2020 MRI">
                   <figure class="snip1321">
                     <img
                       src="assets/images/brain_decoding.jpg"
@@ -298,19 +471,18 @@ https://templatemo.com/tm-531-reflux
                     />
                     <figcaption>
                       <a
-                        href="assets/images/brain_decoding_details.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
+                        href="#"
+                        class="details-trigger"
+                        data-target="modal-brain-decoding"
                         ><i class="fa fa-search"></i
                       ></a>
                       <h4>Brain Decoding </h4>
-                      <span>Learning brain resting-state dynamics with FastText
-                      </span>
+                      <span>Learning brain resting-state dynamics with FastText </span>
                     </figcaption>
                   </figure>
                 </div>
 
-                <div class="isotope-item" data-type="">
+                <div class="isotope-item" data-type="NIRS 2022">
                   <figure class="snip1321">
                     <img
                       src="assets/images/NIRS_mobility.jpg"
@@ -318,13 +490,146 @@ https://templatemo.com/tm-531-reflux
                     />
                     <figcaption>
                       <a
-                        href="assets/images/NIRS_mobility_details.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
+                        href="#"
+                        class="details-trigger"
+                        data-target="modal-nirs-mobility"
                         ><i class="fa fa-search"></i
                       ></a>
                       <h4>NIRS mobility</h4>
-                      <span>Ut sollicitudin risus</span>
+                      <span> Validation of the Medelopt® fNIRS System in Whole-Body Movement: Motion Capture and Short Channel</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="NIRS 2023">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/app_specialist_2020.jpg"
+                      alt="app_specialist_2020"
+                    />
+                    <figcaption>
+                      <a
+                        href="#"
+                        class="details-trigger"
+                        data-target="modal-fnirs-specialist"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>fNIRS Application Specialist</h4>
+                      <span>Driving product improvement and neuroscience research collaboration through user-centered design, market insight,  experimental validation, and post-analytics </span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="CHILDREN 2022 NIRS">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/brain_sync.jpg"
+                      alt="brain_sync"
+                    />
+                    <figcaption>
+                      <a
+                        href="#"
+                        class="details-trigger"
+                        data-target="modal-brain-sync"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Brain Synchronization</h4>
+                      <span>Brain synchronization in naturalistic environment using NIRS: adult-child vs child-child interactions </span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="PSYCHOSIS 2018 MRI">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/psychosis_NAC_2018.jpg"
+                      alt="psychosis_NAC"
+                    />
+                    <figcaption>
+                      <a
+                        href="#"
+                        class="details-trigger"
+                        data-target="modal-psychosis-nac"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>NAC in Psychosis</h4>
+                      <span>Effect of N-Acetyl-Cysteine clinical trial on patients on early psychosis on brain connectivity </span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="DATASET MRI EEG 2024">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/sinergia_dataset_2024.jpg"
+                      alt="sinergia_dataset"
+                    />
+                    <figcaption>
+                      <a
+                        href="#"
+                        class="details-trigger"
+                        data-target="modal-sinergia-dataset"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Sinergia Multimodal Epilepsy/Controls Dataset </h4>
+                      <span>Generate a new multimodal dataset 7T MRI (structural, diffusion, functional) and EEG of 40 healthy controls and 40 patients with epilepsy</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="SOFTWARE MRI EEG 2024">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/cmp3_2024.jpg"
+                      alt="cmp3_2024"
+                    />
+                    <figcaption>
+                      <a
+                        href="#"
+                        class="details-trigger"
+                        data-target="modal-cmp3"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>ConnectomeMapper 3</h4>
+                      <span>BIDS-app implementing full anatomical, diffusion, resting-state function MRI processing pipeline and recently EEG pipeline</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="EPILEPSY MRI EEG METHODS 2025">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/connectome_epilepsy_2025.jpg"
+                      alt="connectome_epilepsy"
+                    />
+                    <figcaption>
+                      <a
+                        href="#"
+                        class="details-trigger"
+                        data-target="modal-connectome-epilepsy"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Connectome Epilepsy</h4>
+                      <span>Effect of a consensus epilepsy connectome on Graph Signal Processing applications: Application to epilepsy</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="WEBSITE 2024">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/sinergia_website_2024.jpg"
+                      alt="sinergia_website"
+                    />
+                    <figcaption>
+                      <a
+                        href="#"
+                        class="details-trigger"
+                        data-target="modal-sinergia-website"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Sinergia Consortium Website</h4>
+                      <span>Website for the visibility of the consortium and tutorial part for the internal collaborators</span>
                     </figcaption>
                   </figure>
                 </div>
@@ -396,6 +701,361 @@ https://templatemo.com/tm-531-reflux
       $(window).scroll(function() {
         checkSection();
       });
+
+      // Filter tabs functionality
+      $('.filter-tab-btn').on('click', function() {
+        var targetTab = $(this).data('tab');
+        
+        // Update active tab button
+        $('.filter-tab-btn').removeClass('active');
+        $(this).addClass('active');
+        
+        // Show corresponding tab content
+        $('.filter-tab-content').removeClass('active');
+        $('.filter-tab-content[data-tab-content="' + targetTab + '"]').addClass('active');
+        
+        // If ALL tab is clicked, trigger the ALL filter
+        if (targetTab === 'all') {
+          $('input[data-type="*"]').prop('checked', true).trigger('change');
+        }
+      });
+
+      // Modal functionality
+      $('.details-trigger').on('click', function(e) {
+        e.preventDefault();
+        var targetModal = $(this).data('target');
+        $('#' + targetModal).fadeIn(300);
+        $('body').css('overflow', 'hidden');
+      });
+
+      $(document).on('click', '.close-modal', function(e) {
+        $('.project-modal').fadeOut(300);
+        $('body').css('overflow', 'auto');
+      });
+
+      $('.project-modal').on('click', function(e) {
+        if ($(e.target).hasClass('project-modal')) {
+          $(this).fadeOut(300);
+          $('body').css('overflow', 'auto');
+        }
+      });
     </script>
+
+    <!-- Project Modal -->
+    <div id="modal-asd" class="project-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Biomarkers in children with autism</h2>
+        <div class="modal-body">
+          <p><strong>Overview:</strong></p>
+          <p>Data management and processing pipeline implementation for a new MRI cohort of children with Autism Spectrum Disorders.</p>
+          
+          <p><strong>Objectives:</strong></p>
+          <ul>
+            <li>Develop automated processing pipelines for MRI data</li>
+            <li>Analyze structural brain imaging in children with ASD</li>
+            <li>Identify potential neuroimaging biomarkers</li>
+            <li>Implement BIDS-compliant data organization</li>
+          </ul>
+          
+          <p><strong>Methods:</strong></p>
+          <p>FreeSurfer processing, BIDS data structure, Python scripting for automation, Quality control protocols</p>
+          
+          <p><strong>Key Technologies:</strong></p>
+          <ul>
+            <li>MRI (T1-weighted structural imaging)</li>
+            <li>FreeSurfer cortical reconstruction</li>
+            <li>Python (data processing and analysis)</li>
+            <li>BIDS format for neuroimaging data</li>
+          </ul>
+          
+          <p><strong>Impact:</strong></p>
+          <p>Successfully established a robust processing pipeline for longitudinal analysis of brain development in children with autism spectrum disorders.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brain Dynamics Modal -->
+    <div id="modal-brain-dynamics" class="project-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Brain Dynamics and Simplices</h2>
+        <div class="modal-body">
+          <p><strong>Overview:</strong></p>
+          <p>Investigating the role of simplicial organization of the structural brain graph in shaping brain functional dynamics.</p>
+          
+          <p><strong>Key Research Questions:</strong></p>
+          <ul>
+            <li>How do higher-order structures (simplices) in brain networks influence dynamics?</li>
+            <li>What is the relationship between structural connectivity and functional dynamics?</li>
+            <li>Can simplicial complexes better explain brain activity patterns?</li>
+          </ul>
+          
+          <p><strong>Methods:</strong></p>
+          <p>Graph theory, simplicial complex analysis, structural and functional MRI, computational modeling</p>
+          
+          <p><strong>Technologies:</strong> MRI, Python, Network analysis tools, Mathematical modeling</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spatio-temporal Dynamics in Autism Modal -->
+    <div id="modal-sd-abide" class="project-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Spatio-temporal Dynamics in Autism</h2>
+        <div class="modal-body">
+          <p><strong>Overview:</strong></p>
+          <p>Spatio-temporal brain connectivity analysis using the ABIDE dataset, a large open-access database of autism brain imaging data.</p>
+          
+          <p><strong>Objectives:</strong></p>
+          <ul>
+            <li>Analyze large-scale brain connectivity patterns in ASD</li>
+            <li>Identify temporal dynamics differences between ASD and controls</li>
+            <li>Leverage open-access data for reproducible research</li>
+          </ul>
+          
+          <p><strong>Dataset:</strong></p>
+          <p>ABIDE (Autism Brain Imaging Data Exchange) - Multi-site neuroimaging dataset</p>
+          
+          <p><strong>Methods:</strong></p>
+          <p>Resting-state fMRI analysis, Dynamic connectivity, Statistical modeling, Machine learning</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brain Decoding Modal -->
+    <div id="modal-brain-decoding" class="project-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Brain Decoding</h2>
+        <div class="modal-body">
+          <p><strong>Overview:</strong></p>
+          <p>Learning brain resting-state dynamics using FastText natural language processing techniques.</p>
+          
+          <p><strong>Innovation:</strong></p>
+          <p>Novel application of NLP techniques (FastText) to decode and understand brain activity patterns, treating brain dynamics as a language.</p>
+          
+          <p><strong>Methods:</strong></p>
+          <ul>
+            <li>FastText embeddings for brain states</li>
+            <li>Resting-state fMRI analysis</li>
+            <li>Machine learning for pattern recognition</li>
+          </ul>
+          
+          <p><strong>Technologies:</strong> MRI, Python, FastText, Machine Learning frameworks</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NIRS Mobility Modal -->
+    <div id="modal-nirs-mobility" class="project-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>NIRS Mobility</h2>
+        <div class="modal-body">
+          <p><strong>Overview:</strong></p>
+          <p>Validation of the Medelopt® fNIRS System in whole-body movement using motion capture and short channel analysis.</p>
+          
+          <p><strong>Research Goals:</strong></p>
+          <ul>
+            <li>Validate fNIRS system performance during movement</li>
+            <li>Integrate motion capture data with brain imaging</li>
+            <li>Assess signal quality with short-channel correction</li>
+          </ul>
+          
+          <p><strong>Applications:</strong></p>
+          <p>Mobile brain imaging, naturalistic neuroscience, movement disorders research</p>
+          
+          <p><strong>Technologies:</strong> fNIRS, Motion capture systems, Signal processing</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- fNIRS Application Specialist Modal -->
+    <div id="modal-fnirs-specialist" class="project-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>fNIRS Application Specialist</h2>
+        <div class="modal-body">
+          <p><strong>Role Overview:</strong></p>
+          <p>Driving product improvement and neuroscience research collaboration through user-centered design, market insight, experimental validation, and post-analytics.</p>
+          
+          <p><strong>Key Responsibilities:</strong></p>
+          <ul>
+            <li>Technical support and training for fNIRS users</li>
+            <li>Product development and feature validation</li>
+            <li>Research collaboration and study design</li>
+            <li>Data analysis pipeline development</li>
+            <li>User feedback integration and market analysis</li>
+          </ul>
+          
+          <p><strong>Impact:</strong></p>
+          <p>Bridged the gap between fNIRS technology development and neuroscience research applications.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brain Synchronization Modal -->
+    <div id="modal-brain-sync" class="project-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Brain Synchronization</h2>
+        <div class="modal-body">
+          <p><strong>Overview:</strong></p>
+          <p>Brain synchronization research in naturalistic environments using fNIRS, comparing adult-child vs child-child interactions.</p>
+          
+          <p><strong>Research Questions:</strong></p>
+          <ul>
+            <li>How do brains synchronize during social interactions?</li>
+            <li>What are the differences between adult-child and child-child synchrony?</li>
+            <li>How does naturalistic environment affect brain coupling?</li>
+          </ul>
+          
+          <p><strong>Methods:</strong></p>
+          <p>Hyperscanning fNIRS, Naturalistic paradigms, Inter-brain connectivity analysis</p>
+          
+          <p><strong>Populations:</strong> Children, Adult-child dyads</p>
+          
+          <p><strong>Technologies:</strong> fNIRS, Hyperscanning setup, Signal processing</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAC in Psychosis Modal -->
+    <div id="modal-psychosis-nac" class="project-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>NAC in Psychosis</h2>
+        <div class="modal-body">
+          <p><strong>Overview:</strong></p>
+          <p>Effect of N-Acetyl-Cysteine (NAC) clinical trial on brain connectivity in patients with early psychosis.</p>
+          
+          <p><strong>Study Design:</strong></p>
+          <p>Clinical trial investigating the neurobiological effects of NAC supplementation on brain network organization in early psychosis patients.</p>
+          
+          <p><strong>Objectives:</strong></p>
+          <ul>
+            <li>Assess NAC treatment effects on brain connectivity</li>
+            <li>Identify biomarkers of treatment response</li>
+            <li>Understand neural mechanisms of NAC in psychosis</li>
+          </ul>
+          
+          <p><strong>Methods:</strong></p>
+          <p>Clinical MRI, Connectivity analysis, Longitudinal design, Statistical modeling</p>
+          
+          <p><strong>Population:</strong> Patients with early psychosis</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sinergia Dataset Modal -->
+    <div id="modal-sinergia-dataset" class="project-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Sinergia Multimodal Epilepsy/Controls Dataset</h2>
+        <div class="modal-body">
+          <p><strong>Overview:</strong></p>
+          <p>Generation of a comprehensive multimodal neuroimaging dataset including 7T MRI and EEG from healthy controls and epilepsy patients.</p>
+          
+          <p><strong>Dataset Composition:</strong></p>
+          <ul>
+            <li>40 healthy control participants</li>
+            <li>40 patients with epilepsy</li>
+            <li>7T structural MRI</li>
+            <li>7T diffusion MRI</li>
+            <li>7T functional MRI</li>
+            <li>EEG recordings</li>
+          </ul>
+          
+          <p><strong>Data Standards:</strong></p>
+          <p>BIDS-compliant organization, Quality-controlled, Multi-modal integration</p>
+          
+          <p><strong>Applications:</strong></p>
+          <p>Epilepsy research, Methods development, Multi-modal analysis techniques</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ConnectomeMapper 3 Modal -->
+    <div id="modal-cmp3" class="project-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>ConnectomeMapper 3</h2>
+        <div class="modal-body">
+          <p><strong>Overview:</strong></p>
+          <p>BIDS-app implementing a complete processing pipeline for anatomical, diffusion, resting-state functional MRI, and EEG data.</p>
+          
+          <p><strong>Features:</strong></p>
+          <ul>
+            <li>Full T1-weighted anatomical processing</li>
+            <li>Diffusion MRI tractography and connectivity</li>
+            <li>Resting-state fMRI preprocessing and connectivity</li>
+            <li>EEG processing pipeline (recent addition)</li>
+            <li>Multi-modal connectome generation</li>
+            <li>BIDS-compliant input/output</li>
+          </ul>
+          
+          <p><strong>Technology Stack:</strong></p>
+          <p>Python, Nipype, Docker, BIDS standard, FreeSurfer, FSL, ANTs</p>
+          
+          <p><strong>Availability:</strong></p>
+          <p>Open-source software for reproducible connectomics research</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Connectome Epilepsy Modal -->
+    <div id="modal-connectome-epilepsy" class="project-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Connectome in Epilepsy</h2>
+        <div class="modal-body">
+          <p><strong>Overview:</strong></p>
+          <p>Investigation of a consensus epilepsy connectome and its application to Graph Signal Processing methods in epilepsy research.</p>
+          
+          <p><strong>Research Goals:</strong></p>
+          <ul>
+            <li>Develop consensus connectome for epilepsy</li>
+            <li>Apply graph signal processing techniques</li>
+            <li>Identify network biomarkers in epilepsy</li>
+            <li>Improve understanding of epileptic network dynamics</li>
+          </ul>
+          
+          <p><strong>Methods:</strong></p>
+          <p>Multi-modal MRI, EEG, Graph signal processing, Network analysis, Machine learning</p>
+          
+          <p><strong>Innovation:</strong></p>
+          <p>Novel application of GSP methods to clinical epilepsy data for improved characterization and prediction.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sinergia Website Modal -->
+    <div id="modal-sinergia-website" class="project-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Sinergia Consortium Website</h2>
+        <div class="modal-body">
+          <p><strong>Overview:</strong></p>
+          <p>Website for the visibility of the Sinergia consortium and tutorial resources for internal collaborators.</p>
+          
+          <p><strong>Website Features:</strong></p>
+          <ul>
+            <li>Public-facing information about the consortium</li>
+            <li>Research team and institution profiles</li>
+            <li>Project descriptions and publications</li>
+            <li>Internal tutorial section for collaborators</li>
+            <li>Data sharing and documentation</li>
+          </ul>
+          
+          <p><strong>Purpose:</strong></p>
+          <p>Enhance consortium visibility, facilitate collaboration, and provide resources for team members working on multi-modal epilepsy research.</p>
+          
+          <p><strong>Technologies:</strong> Web development, Content management, Documentation</p>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

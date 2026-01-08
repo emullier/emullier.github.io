@@ -55,7 +55,7 @@
     var filter = function() {
       var type = $filterCheckboxes.filter(":checked").data("type") || "*";
       if (type !== "*") {
-        type = '[data-type="' + type + '"]';
+        type = '[data-type*="' + type + '"]';
       }
       $isotope.isotope({ filter: type });
     };
